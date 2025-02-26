@@ -9,11 +9,13 @@ import tailwindcss from '@tailwindcss/vite';
 
 import svelte from '@astrojs/svelte';
 
+import angular from '@analogjs/astro-angular';
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), vue(), svelte()],
+  integrations: [react(), vue(), svelte(), angular(),],
 
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
   }
 });

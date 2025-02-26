@@ -1,8 +1,9 @@
 ---
-import background from '../assets/background.svg';
-import { Button } from '../components/ui/button'
-import SvelteButton from '../components/SvelteButton.svelte';
-import VueButton from '../components/VueButton.vue';
+import {Button} from '@/components/ui/button.tsx'
+import SvelteButton from '@/components/SvelteButton.svelte';
+import '@/components/NgButton.component';
+import VueButton from '@/components/VueButton.vue';
+import {AngularButtonComponent} from '@/components/NgButton.component.ts';
 ---
 
 <div id="container">
@@ -14,9 +15,12 @@ import VueButton from '../components/VueButton.vue';
 				🏝️
 			</h1>
 			<section class="flex gap-2">
-				<Button>React!</Button>
-				<VueButton client:load>Vue!</VueButton> 
+				<!-- <Button>React!</Button> -->
+				<VueButton client:load/> 
 				<SvelteButton client:load />
+				
+				<!-- <AngularButtonComponent client:visible /> -->
+				<button class="bg-blue-600 text-white shadow-xs hover:bg-blue-600/90 h-9 px-4 rounded-md">HTML!</button>
 			</section>
 		</section>
 	</main>
