@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.2.0",
+    "@astrojs/svelte": "^7.0.4",
+    "@astrojs/vue": "^5.0.7",
     "@radix-ui/react-slot": "^1.1.2",
     "@tailwindcss/vite": "^4.0.9",
     "@types/react": "^19.0.10",
@@ -20,8 +22,11 @@
     "lucide-react": "^0.476.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "svelte": "^5.20.4",
     "tailwind-merge": "^3.0.2",
     "tailwindcss": "^4.0.9",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.7.3",
+    "vue": "^3.5.13"
   }
 }
